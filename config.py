@@ -43,13 +43,13 @@ class Config(object):
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
     
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Digital_Auto_Rename_Bot")     
+    DB_NAME = os.environ.get("DB_NAME","Zoro_Xprobot")     
     DB_URL = os.environ.get("DB_URL","")
  
     # other configs
-    RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/b746aadfe59959eb76f59.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6705898491').split()]
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002123429361"))
+    RKN_PIC = os.environ.get("RKN_PIC", "https://files.catbox.moe/45n49c.mp4")
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7846306818').split()]
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003846103850"))
 
     # free upload limit 
     FREE_UPLOAD_LIMIT = 6442450944 # calculation 6*1024*1024*1024=results
@@ -62,7 +62,7 @@ class Config(object):
     try:
         FORCE_SUB = int(os.environ.get("FORCE_SUB", "")) 
     except:
-        FORCE_SUB = os.environ.get("FORCE_SUB", "Digital_Botz")
+        FORCE_SUB = os.environ.get("FORCE_SUB", "AnimeXverse")
         
     # wes response configuration     
     PORT = int(os.environ.get("PORT", "8080"))
